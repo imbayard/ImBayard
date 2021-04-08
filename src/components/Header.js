@@ -5,11 +5,12 @@ export default class Images extends Component {
     render() {
         return(
             <div className='header'>
-                <h1 className='title'>Hey there, I'm Bayard.</h1>
+                <h1 className='title'>Bayard Eton</h1>
                 <img 
+                    className='propic'
                     src={MaskedBayard}
-                    style={{margin:'auto', marginTop: '5vh', borderRadius:'80px', width:'25vw'}}
                 />
+                <p className='caption'>Full-Stack Engineer</p>
             </div>
         )
     }

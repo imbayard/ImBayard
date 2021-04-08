@@ -3,13 +3,78 @@
 }
 
 .header {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
-  background-color: rgb(220, 239, 255);
-  padding: 0;
+  background-color: rgb(32, 55, 73);
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .title {
-  padding-top: 30vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 10%;
+  color: white;
+  font-family: Verdana;
+}
+
+.propic {
+  margin: auto;
+  margin-top: 5vh;
+  border-radius: 500px;
+  width: 25vw;
+  border: 1px solid white;
+}
+
+.summary {
+  height: 80vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+}
+
+.caption {
+  color: white;
+  font-family: Verdana;
+  font-style: italic;
+}
+
+.abt-me {
+  margin: auto;
+  margin-top: 5%;
+  font-family: Verdana;
+  font-size: 40px;
+  text-align: left;
+  margin-left: 20vw;
+}
+
+.abt-me-p {
+  font-family: 'Inder';
+  text-align: left;
+}
+
+.abt-me-p-wrap {
+  display: grid;
+  width: 60vw;
+  grid-template-rows: auto auto auto;
+  text-align: left;
+  margin-left: 20vw;
+  margin-top: 8px;
+  border-bottom: 3px solid rgb(32, 55, 73);
+}
+
+.project-title {
+  margin: auto;
+  padding-top: 5%;
+  font-family: Verdana;
+  font-size: 40px;
+  color: white;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+  width: 60vw;
+}
+
+.project-card-wrap {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 5px;
+  padding-top: 10px;
 }
