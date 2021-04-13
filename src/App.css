@@ -8,6 +8,7 @@
   background-color: rgb(32, 55, 73);
   padding-left: 10vw;
   padding-right: 10vw;
+  box-shadow: inset 0 0 20px 5px #000;
 }
 
 .title {
@@ -77,4 +78,11 @@
   grid-template-columns: auto auto auto;
   margin-top: 5px;
   padding-top: 10px;
+}
+
+.skills-wrapper {
+  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto auto auto;
 }
