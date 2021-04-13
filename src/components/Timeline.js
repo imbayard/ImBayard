@@ -4,7 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import CAIcon from './timeline_photos/CA.png';
 import BUEng from './timeline_photos/BUENG.png';
 import BBn from './timeline_photos/BBN.png';
-import { IoIosBriefcase, IoIosSchool } from "react-icons/io";
+import { IoIosBriefcase, IoIosSchool, IoIosStar } from "react-icons/io";
 
 const CA = <img style={{height: '15vh', marginTop: '5px'}} src={CAIcon} alt='Curriculum Associates Logo' />
 const BU = <img style={{height: '15vh', marginTop: '5px'}} src={BUEng} alt='Boston U Logo' />
@@ -13,11 +13,12 @@ const BBN = <img style={{height: '15vh', marginTop: '5px'}} src={BBn} alt='BB&N 
 export default class Timeline extends Component {
     render() {
         return(
-            <VerticalTimeline>
+            <VerticalTimeline layout='1-column'>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ color: 'black' }}
                     date="2020 - 2021"
+                    dateClassName='timeline-date'
                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                     icon={<IoIosBriefcase />}
                 >
@@ -29,8 +30,31 @@ export default class Timeline extends Component {
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
+                    contentStyle={{ color: 'black' }}
+                    date="Dec 2020"
+                    dateClassName='timeline-date'
+                    iconStyle={{ background: 'gold', color: '#fff' }}
+                    icon={<IoIosStar />}
+                >
+                    <h3 style={{color: 'rgb(33, 150, 243)'}} className="vertical-timeline-element-subtitle">Began work on Stable</h3>
+                    <h4 style={{color: 'rgb(33, 150, 243)'}} className="vertical-timeline-element-subtitle"><strong>Role: </strong>Team Lead</h4>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ color: 'black' }}
+                    date="Dec 2020"
+                    dateClassName='timeline-date'
+                    iconStyle={{ background: 'gold', color: '#fff' }}
+                    icon={<IoIosStar />}
+                >
+                    <h3 style={{color: 'rgb(33, 150, 243)'}} className="vertical-timeline-element-subtitle">Began work on ContextCheck</h3>
+                    <h4 style={{color: 'rgb(33, 150, 243)'}} className="vertical-timeline-element-subtitle"><strong>Role: </strong>Lead Software Architect, UI/UX Lead</h4>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
                     contentStyle={{ color: 'black'}}
                     date="2018 - 2020"
+                    dateClassName='timeline-date'
                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                     icon={<IoIosBriefcase />}
                 >
@@ -41,9 +65,10 @@ export default class Timeline extends Component {
                     <p style={{color: 'rgb(33, 150, 243)'}}><strong>Notable: </strong>Led weekly discussion sections and held office hours</p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
+                    className="vertical-timeline-element--education"
                     contentStyle={{ color: 'black' }}
                     date="2017 - 2021"
+                    dateClassName='timeline-date'
                     iconStyle={{ background: 'green', color: '#fff' }}
                     icon={<IoIosSchool />}
                 >
@@ -54,9 +79,10 @@ export default class Timeline extends Component {
                     <p style={{color: 'rgb(33, 150, 243)'}}><strong>Languages: </strong>C, C++, Matlab, JavaScript, Python, Swift</p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
+                    className="vertical-timeline-element--education"
                     contentStyle={{ color: 'black' }}
                     date="2013 - 2017"
+                    dateClassName='timeline-date'
                     iconStyle={{ background: 'green', color: '#fff' }}
                     icon={<IoIosSchool />}
                 >
