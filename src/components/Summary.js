@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Skills from './Skills';
 
 export default class Summary extends Component {
     render() {
@@ -13,6 +14,7 @@ export default class Summary extends Component {
                         This is another paragraph about me.
                     </p>
                 </span>
+                <Skills />
             </div>
         )
     }

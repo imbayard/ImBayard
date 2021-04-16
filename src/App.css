@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: Verdana;
 }
 
 .header {
@@ -68,7 +69,6 @@
   font-family: Verdana;
   font-size: 40px;
   color: white;
-  border-bottom: 3px solid white;
   padding-bottom: 2px;
   width: 60vw;
 }
@@ -81,13 +81,59 @@
 }
 
 .skills-wrapper {
-  margin-top: 10px;
+  margin: auto;
+  margin-top: 10%;
   display: grid;
-  justify-content: center;
+  text-align: center;
+  width: 80vw;
   grid-template-columns: auto auto auto auto auto auto;
 }
 
 .timeline-date {
   margin: 0;
   padding: 0;
+}
+
+.skill {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  border: 3px solid rgb(32, 55, 73);
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.language {
+  margin: auto;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.skill-level {
+  margin: auto;
+}
+
+.skill-logo {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.project {
+  background-color: white;
+  padding: 10px;
+  width: auto;
+  margin: auto;
+}
+
+.project:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }

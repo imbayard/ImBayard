@@ -13,6 +13,8 @@ const BBN = <img style={{height: '15vh', marginTop: '5px'}} src={BBn} alt='BB&N 
 export default class Timeline extends Component {
     render() {
         return(
+            <>
+            <h1 className='project-title' style={{color: 'rgb(32, 55, 73)'}}>Timeline</h1>
             <VerticalTimeline layout='1-column'>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -93,6 +95,7 @@ export default class Timeline extends Component {
                     <p style={{color: 'rgb(33, 150, 243)'}}><strong>Awards: </strong>Outstanding Profile (writing), Barrett-Hoyt (leadership, kindness)</p>
                 </VerticalTimelineElement>
             </VerticalTimeline>
+            </>
         )
     }
 }
